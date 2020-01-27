@@ -156,16 +156,19 @@ main article {
   margin-top: 0;
   margin-right: 1em;
   padding-left: .5em;
+  font-size: .5rem;
 }
 
 .social-icons ul {
   float: left;
+
 }
 
 .social-icons li {
   list-style-type: none;
-  display: inline-flex;
+  display: inline-block;
   padding-right: 3em;
+  vertical-align: bottom;
 }
 
 /* Main Nav Menu Styling */
