@@ -70,16 +70,18 @@ footer {
 
 footer ul {
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   padding: 0;
+  flex-direction: row;
+  margin: 1rem 25%;
 }
 
 footer li {
-  display: block;
   max-width: 15rem;
+  align-self: center;
   text-align: center;
-  margin: 1rem;
+  margin: .5rem 1rem 0;
   padding: 0;
 }
 
@@ -95,7 +97,7 @@ header h1 {
   color: #0e3b43;
   text-align: left;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 header p {
@@ -110,47 +112,41 @@ header p {
 /* Main section and article styling */
 main {
   grid-area: content;
-  padding: 0 1rem 0;
-  margin: 0;
+  justify-content: left;
+  padding: 0 1rem auto;
+  margin: 1rem 1rem auto;
 }
-
 
 main article {
   grid-area: content;
+  justify-content: left;
+}
+
+main article p {
+  margin: auto 1rem;
+}
+
+main ul li {
+  margin-bottom: .5rem;
+}
+
+main article h3 {
+  margin-left: 1rem;
 }
 
 /* Featured Image for homepage */
 #main-img {
   grid-area: content;
-  grid-column: 4 span 2;
+  grid-column: 3 span 3;
   float: right;
   display: block;
-  margin-right: 1em;
+  margin: 2rem 1rem 0 2rem;
   align-self: end;
   max-width: 100%;
   max-height: 40rem;
   border-radius: 25px;
 }
-/* Homeopage Title and social icon styling */
-#main-title {
-  grid-area: content;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #0e3b43;
-  text-align: left;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
 
-#main-subtitle {
-  color: #4b5043;
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  padding: 0 0 0.5em 0.25em;
-  margin: 1em 0;
-}
 /* Styling Font Awesome SVG icons */
 .social-icons {
   margin-top: 0;
@@ -160,8 +156,7 @@ main article {
 }
 
 .social-icons ul {
-  float: left;
-
+  align-items: center;
 }
 
 .social-icons li {
