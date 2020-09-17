@@ -97,7 +97,7 @@ header h1 {
   color: #0e3b43;
   text-align: left;
   padding-bottom: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 header p {
@@ -105,8 +105,8 @@ header p {
   text-align: left;
   font-size: 1.5rem;
   font-weight: lighter;
-  padding: 0 0 0 0.25em;
-  margin: 1em 0;
+  padding: 0 1rem .25rem;
+  margin: 0;
 }
 
 /* Main section and article styling */
@@ -123,7 +123,28 @@ main article {
 }
 
 main article p {
-  margin: auto 1rem;
+  margin: auto auto .75rem 2rem;
+  line-height: 1.5rem;
+}
+
+main article h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e3b43;
+  text-align: left;
+  padding: 0 .5rem .25rem;
+  margin-bottom: 1rem;
+}
+
+main article h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  font-weight: lighter;
+  color: #4b5043;
+  text-align: left;
+  padding: 0 .5rem;
+  margin-bottom: 0;
 }
 
 main ul li {
@@ -131,7 +152,7 @@ main ul li {
 }
 
 main article h3 {
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
 /* Featured Image for homepage */
@@ -229,7 +250,7 @@ nav li a{
 }
 
 /* CV and PDF styling */
-.cv-pdf {
+.pdf {
   padding: 0 18px;
   display: none;
   overflow: hidden;
@@ -237,8 +258,13 @@ nav li a{
 }
 
 .cv article p{
-  margin-left: 2em;
-  text-indent: -1em;
+  margin: auto auto .75rem 2rem;
+  text-indent: -1rem;
+  font-size: .9rem;
+}
+
+.cv article li{
+  font-size: .9rem;
 }
 
 .cv article li {
@@ -254,3 +280,7 @@ nav li a{
   background-color: lightgray;
   font-family: 'Libre Baskerville', serif;
 }
+
+.cv article h4 {
+    margin-left: .5rem;
+  }
