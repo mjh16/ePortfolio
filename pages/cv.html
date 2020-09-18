@@ -32,11 +32,7 @@
     <!--CV Body Section-->
     <section class="cv">
       <button class="collapsible">Click Here for a PDF Version of my CV</button>
-      <object class="pdf" data="../files/healy_cv.pdf" type="application/pdf" width="100%" height="800px">
-        <p>It appears you don't have a PDF plugin for this browser.
-          No biggie... you can <a href="../files/healy_cv.pdf">click here to
-            download the PDF file.</a></p>
-      </object>
+      <div id="cv" class="pdf"></div>
       <article>
         <h2>Education</h2>
           <h3>PhD, English. Florida State University - Tallahassee FL</h3>
@@ -197,6 +193,11 @@
         }
       });
     }
+  </script>
+  <script src="../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../files/healy_cv.pdf", "#cv", {pdfOpenParams: { zoom: "page-width" }});
   </script>
 </body>
 

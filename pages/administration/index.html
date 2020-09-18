@@ -35,11 +35,7 @@
     <article>
       <h2>Administrative Philosophy</h2>
       <button class="collapsible">Click Here for a PDF Version of my Philosophy</button>
-      <object class="pdf" data="../../files/healy_administrative_philosophy.pdf" type="application/pdf" width="100%" height="800px">
-        <p>It appears you don't have a PDF plugin for this browser.
-          No biggie... you can <a href="../../files/healy_administrative_philosophy.pdf">click here to
-            download the PDF file.</a></p>
-      </object>
+      <div id="philosophy" class="pdf"></div>
       <p>My experiences at Florida State University have provided me with numerous opportunities to not only study administrative work, in classes such as Designing Writing, but to also experience and put it into practice as a graduate co-administrator for the Museum of Everyday Writing and as the Graduate Coordinator of the Johnston Digital Studio. My administrative philosophy has been greatly shaped by moments of praxis and have led to an increased interest in thinking programmatically about the curriculum of the undergraduate major in Writing and Rhetoric. My administrative philosophy is built around serving the localized and contextual needs of students, both graduate and undergraduate, and how the relationships between faculty and students intersect with the discipline of Rhetoric and Composition. As such, I see three major threads emerging in my administrative philosophy. First, that writing majors need to leverage and be adaptable to local contexts, expertise, and needs. Second, that they should be built on inquiry into the discipline of Rhetoric and Composition. And third, that an effective writing major is built on praxis.</p>
       <p>I see a writing major as playing an integral part of a 21st century English department, building on local expertise and disciplinary knowledge to effectively prepare students for the variety of contexts in which they will write, edit, create, and critique in a variety of modes, medias, and genres. With the development of such majors, minors, and concentrations across English and Writing programs, the need for developing and deploying specialized knowledge with prepared administrators that is different from those of a WPA, Writing Center, or WAC director. While there is a great deal to be drawn from these longer administrative traditions, the need for developing cohesive and contextualized majors is a potential area of opportunity. I will work to seek collaborations and opportunities outside of traditional English department for faculty, staff, and students, to build a major that feels relevant and responsive to community needs and adaptable to changes within and beyond the academy. </p>
       <p><b>Local Contexts</b><br>
@@ -99,6 +95,11 @@
         }
       });
     }
+  </script>
+  <script src="../../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../../files/healy_administrative_philosophy.pdf", "#philosophy", {pdfOpenParams: { zoom: "page-width" }});
   </script>
 </body>
 

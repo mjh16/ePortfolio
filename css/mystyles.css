@@ -284,3 +284,8 @@ nav li a{
 .cv article h4 {
     margin-left: .5rem;
   }
+
+.pdfobject-container { 
+  height: 40rem; 
+  width: 54rem;
+}
