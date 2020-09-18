@@ -35,12 +35,9 @@
   </header>
   <!--Main Page Content-->
   <main>
-
     <article title="Course Details">
       <h3>Course Syllabi</h3>
-      <ul>
-        <li>Fall 2019</li>
-      </ul>
+        <div id="syllabus"></div>
       <h3>Course Materials</h3>
       <p>This will include digital materials, example lessons, and assignment sheets.</p>
       <h3>Student Example Work</h3>
@@ -80,6 +77,11 @@
       </li>
     </ul>
   </footer>
+  <script src="../../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../../files/syllabi/enc3416_syllabus.pdf", "#syllabus", {pdfOpenParams: { zoom: "page-fit" }});
+    </script>
 </body>
 
 </html>

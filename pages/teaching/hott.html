@@ -35,7 +35,7 @@
     </header>
     <article title="Course Details">
       <h3>Syllabus</h3>
-        <p><a href="../../files/syllabi/eng3803_syllabus.pdf">ENG 3803 - Example Syllabus</a></p>
+        <div id="syllabus"></div>
       <h3>Course Materials</h3>
         <p>This will include digital materials, example lessons, and assignment sheets.</p>
       <h3>Student Example Work</h3>
@@ -74,6 +74,11 @@
       </li>
     </ul>
   </footer>
+  <script src="../../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../../files/syllabi/eng3803_syllabus.pdf", "#syllabus", {pdfOpenParams: { zoom: "page-fit" }});
+    </script>
 </body>
 
 </html>

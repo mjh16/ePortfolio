@@ -38,11 +38,7 @@
     <h3>Currently Teaching - Fall 2020: <a href="hott.html">ENG 3803 - Introduction to the History of Text Technologies</a></h3> 
     <h2>Teaching Philosophy</h2>
     <button class="collapsible">Click Here for a PDF Version of my Philosophy</button>
-    <object class="pdf" data="../../files/healy_teaching_philosophy.pdf" type="application/pdf" width="100%" height="800px">
-      <p>It appears you don't have a PDF plugin for this browser.
-        No biggie... you can <a href="../../files/healy_teaching_philosophy.pdf">click here to
-          download the PDF file.</a></p>
-    </object>
+      <div id="philosophy" class="pdf"></div>
     <p style="text-align: center"><i>“I think Michael Healy really thinks outside of the box with his assignments and that encourages hands on learning <br> that gives us real experience and content we can use when entering the professional field.” Student Evaluation, WEPO Fall 2019</i></p>
     <p>In my teaching I want to create classrooms that are collaborative, playful, process focused, connected, and action oriented. My own teaching philosophy has been shaped by my own varied experiences in rhetoric, composition, creative writing, and technology, which I seek to bring meaningfully into my classes. My teaching philosophy is student centered, and I work to bring their experiences, insights, and needs into the classroom in meaningful ways. I strive to create highly dynamic classes that push students beyond their comfort levels to see and experience both the content of the class and to bring their own learning and experiences into the classroom. I also work to create connections between classes, into curriculums, and beyond the university walls. I want to be able to surprise and delight students, while also engaging with them in learning as we all work to become more just, more aware, and more effective rhetorical agents. In doing so, my teaching philosophy is first focused on the students as people, and working to engage care of the whole person, inside and outside of the classroom. </p>
     <p>I work towards creating a highly collaborative classroom by engaging with and alongside students as they work together and individually through content and making within the classroom. A cornerstone of my approach to teaching is small group discussion, where I will pose questions to the content, and have students work through their own inquiry to guide the class. I work to affirm their insights, individually and together, and to challenge the assumptions that they bring. Much of the labor of classes is done together, with guidance and questions from me. For example, two of the major project in my junior level advanced composition class, Writing and Editing in Print and Online, are collaborative projects completed in semester long teams. I have students work to select their groups, identify exigences, and work to respond together rhetorically. In my History of Text Technologies class, I have students individually curate artifacts for a digital archive that is shared with the class, and then used as the basis for collaborative exhibits.</p>
@@ -110,6 +106,11 @@
         }
       });
     }
+  </script> 
+  <script src="../../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../../files/healy_teaching_philosophy.pdf", "#philosophy", {pdfOpenParams: { zoom: "page-width" }});
   </script>
 </body>
 
