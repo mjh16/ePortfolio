@@ -300,4 +300,5 @@ nav li a{
 .pdfobject-container { 
   height: 40rem; 
   width: 54rem;
+  border: .25rem solid #9bc4bc2f;
 }
