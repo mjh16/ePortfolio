@@ -33,14 +33,40 @@
   </header>
   <main>
     <article title="Course Details">
-      <h3>Course Syllabi</h3>
-      <ul>
-        <li>Summer 2017</li>
-        <li>Summer 2018</li>
-        <li>Summer 2019</li>
-      </ul>
-      <h3>Course Materials</h3>
-      <p>This will include digital materials, example lessons, and assignment sheets.</p>
+      <h2>Example Syllabus</h2>
+      <div id="syllabus"></div>
+      <h2>Example Course Assignment</h2>
+      <p>In this assignment, you will be mapping and tracing the texts and contexts of how you got here, to Florida State, summer C, and ENC 1101. I want you to think broadly about the things that you have brought with you: writing habits, daily habits, friends, favorite TV shows, games, social media, pictures, books, memories, and things. I then want you to think about how this intersects with your understandings of yourself as a writer. This is a narrative piece, and it asks you to think closely about who you are, where you come from, and what you bring with you. You will work with small scenes, snippets, and descriptions, and using detail explore how these pieces interact to tell something important about yourself and your experiences with writing and literacy.</p>
+      <h3>Outcomes:</h3>
+      <h4>By the end of this assignment students should:</h4>
+        <ul>
+          <li>Be able to use rich description and narration purposefully</li>
+          <li>Adapt composition towards their audience</li>
+          <li>Explore and discuss choices made in the composition process</li>
+          <li>Explore the essay as more than just a reporting of facts or prior knowledge</li>
+          <li>Understand composition as a means of being able to make knowledge and have a position from which to share it.</li>
+          <li>Respond and articulate rhetorical situations and networks in which the composition circulates</li>
+        </ul>
+      <h4>Requirements:</h4>
+          <ul>
+            <li>1500 Polished Words for the Project </li>
+            <ul>
+              <li>
+                Minimum requirements for passing, 1250 words for the essay, 250 words for the reflection
+            </li>
+            </ul>
+            <li>Snippets and Scenes that show rather than tell</li>
+            <li>Relate or reveal in some ways your thoughts, feelings, and personality</li>
+            <li>Compose an essay that shows your journey to FSU and ENC 1101 </li>
+          </ul>
+        <h4>Ways to approach</h4>
+          <ul>
+            <li>Start with the journal, see what you have</li>
+            <li>Consider what you could put into words, consider what else might be useful</li>
+            <li>Develop different scenes that reveal something about yourself and how you got here</li>
+            <li>Think and develop scenes that explore things, places, and people important to you</li>
+            <li>Consider what has changed or what has stayed the same</li>
+          </ul>
       <h3>Student Example Work</h3>
       <p>All work here is used with student permission</p>
       <h3>Student Evalutions</h3>
@@ -49,9 +75,6 @@
   </main>
   <footer>
     <ul>
-      <li><a href="files/healy.cv.pdf" target="_blank" title="Michael's CV PDF">
-        <i class="fas fa-file-pdf fa-3x"></i>
-      </a></li>
       <li><a href="mailto:mhealy@fsu.edu" target="_blank" title="email Michael">
         <i class="fas fa-envelope-open-text fa-3x"></i>
       </a></li>
@@ -102,6 +125,11 @@
   </noscript>
   <!-- End Quantcast tag -->
   </footer>
+  <script src="../../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../../files/syllabi/enc1101_syllabus.pdf", "#syllabus", {pdfOpenParams: { zoom: "page-width" }});
+    </script>
 </body>
 
 </html>

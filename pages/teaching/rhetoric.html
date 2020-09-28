@@ -34,21 +34,39 @@
   </header>
   <main>
     <article title="Course Details">
-      <h3>Course Syllabi</h3>
-        <p><a href="../../files/syllabi/eng3021_syllabus.pdf">ENG 3803 - Example Syllabus</a></p>
-      <h3>Course Materials</h3>
-      <p>This will include digital materials, example lessons, and assignment sheets.</p>
+      <h2>Example Course Syllabus</h2>
+        <div id="syllabus"></div>
+      <h2>Example Assignment: Collaborative Rhetorical Analysis of a Contemporary Issue</h2>
+      <h3>Your Task</h3>
+      <p>In this collaborative&mdash;which may be complete in a group of up to three&mdash;you will analyze a current event or issue using a modern or post-modern rhetorical theory, concept, framework, or theorist of your choosing. You will then present your analysis through a genre that is relevant to the contemporary event or technology.</p>
+      <h3>Objectives</h3>
+      <ul>
+      <li>To research and use a rhetorical theory to analyze a contemporary issue or technology.</li>
+      <li>Come to a better understanding of how to use rhetorical theory as a means of analyzing and producing analysis.</li>
+      <li>Better understand how rhetorical analysis can help us develop knowledge about the world.</li>
+      <li>Present the knowledge gained from analysis in a way that can be engaging for a targeted audience.</li>
+      </ul>
+      <h3>Requirements</h3>
+      <ol>
+      <li>Focuses primarily on a rhetorical analysis using a frame of your choosing.</li>
+      <li>Clearly and coherently presents the results of analysis in a relevant genre.</li>
+      <li>The analysis reveals some new knowledge about the chosen issue or event.</li>
+      </ol>
+      <h3>Assessment</h3>
+      <ul>
+      <li>Articulation of the knowledge developed through the analysis</li>
+      <li>Clarity and Cohesion of the presentation</li>
+      <li>Completeness of the project - does it meet all the assignment requirements</li>
+      </ul>
+      <hr></hr>
       <h3>Student Example Work</h3>
       <p>All work here is used with student permission</p>
-      <h3>Student Evalutions</h3>
+      <h3>Curated Student Evalutions</h3>
       <p>Includes formal university evals and informal student feedback</p>
     </article>
   </main>
   <footer>
     <ul>
-      <li><a href="files/healy.cv.pdf" target="_blank" title="Michael's CV PDF">
-        <i class="fas fa-file-pdf fa-3x"></i>
-      </a></li>
       <li><a href="mailto:mhealy@fsu.edu" target="_blank" title="email Michael">
         <i class="fas fa-envelope-open-text fa-3x"></i>
       </a></li>
@@ -99,6 +117,11 @@
   </noscript>
   <!-- End Quantcast tag -->
   </footer>
+  <script src="../../js/pdfobject.js"></script>
+  <script>
+    //Be sure your document contains an element with the CSS selector "class="pdf""
+    PDFObject.embed("../../files/syllabi/enc3021_syllabus.pdf", "#syllabus", {pdfOpenParams: { zoom: "page-width" }});
+    </script>
 </body>
 
 </html>
