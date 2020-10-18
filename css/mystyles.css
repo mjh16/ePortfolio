@@ -274,8 +274,8 @@ button {
 }
 
 .cv article p {
-  margin: auto auto .75rem 2rem;
-  text-indent: -1rem;
+  margin: auto auto .5rem 2rem;
+  text-indent: -.6rem;
   font-size: .9rem;
 }
 
